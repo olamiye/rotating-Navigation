@@ -15,15 +15,14 @@ body{
 .container{
     background-color: #fafafa;
     transform-origin: top left;
-    transition: transform 0.5s linear;
+    transition: transform 0.5s ease-in;
     width: 100vw;
     min-height: 100vh;
     padding: 50px;
-
 }
 
 .container.show-nav{
-    transform: rotate(-20deg)
+    transform: rotate(-70deg)
 }
 
 .circle-container{
@@ -41,6 +40,9 @@ body{
     transition: transform 0.5s linear;
 }
 
+.container.show-nav circle{
+    transform: rotate(-40deg);
+}
 .circle button{
     position: absolute;
     cursor: pointer;
@@ -59,14 +61,14 @@ body{
 
 .circle button#open{
     left: 60%;
-    border: 2px solid black;
+    cursor: pointer;
 }
 
 .circle button#close{
-    top: 60%;
-    transform: rotate(90deg);
-    transform-origin: top left
-}
+    top:60%;
+    transform: rotate(60deg);
+    transform-origin: top left;
+} 
 
 .content img{
     max-width: 100%;
